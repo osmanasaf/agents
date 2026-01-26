@@ -1,58 +1,10 @@
-# AI Workflow Agents Repository
+# Agents
 
-Enterprise-grade, modüler ve genişletilebilir AI workflow agent sistemi. Antigravity ve Cursor ile uyumlu.
+Minimal rule/agent set optimized for token efficiency.
 
-## 🚀 Quick Start
+Structure:
+- system/: base, backend, frontend, and Java rules
+- tasks/: single-purpose task agents
+- workflows/: manual pipeline summary
 
-### Windows
-```powershell
-.\setup.ps1 -TargetProject "C:\path\to\your\project" -Template "java-ddd"
-```
-
-### Linux/Mac
-```bash
-./setup.sh --target /path/to/your/project --template java-ddd
-```
-
-## 📁 Repository Structure
-
-```
-├── global/                 # Global AI configurations
-│   └── GEMINI.md          # Global rules for ~/.gemini/
-├── rules/                  # Modular rule library
-│   ├── core/              # SOLID, Clean Code, OOP, Patterns
-│   ├── backend/           # Java 21, DDD, Spring Boot
-│   ├── frontend/          # Vue 3, Pinia, TypeScript, Security
-│   ├── security/          # OWASP, PII protection
-│   └── testing/           # Unit & Integration testing
-├── templates/             # Project templates
-│   ├── java-ddd/          # Java 21 DDD template
-│   │   └── .agent/        # Agent config
-│   │       ├── rules/     # Project rules
-│   │       └── workflows/ # Workflow agents
-│   └── vue-spa/           # Vue 3 SPA template
-│       └── .agent/        # Agent config
-│           ├── rules/     # Project rules
-│           └── workflows/ # Workflow agents
-└── docs/                  # Documentation
-```
-
-## 🤖 Available Agents
-
-| Agent | Description |
-|-------|-------------|
-| `/context-agent` | Collects project technical context |
-| `/requirement-agent` | Structures requirements into testable specs |
-| `/rule-agent` | Aggregates applicable rules |
-| `/planner-agent` | Creates phased technical plans |
-| `/task-generator-agent` | Generates implementation tasks |
-| `/validation-agent` | Validates plans and tasks |
-| `/review-agent` | Unified code review with 6 reviewers |
-| `/master-pipeline` | Orchestrates full workflow |
-
-## 📚 Documentation
-
-- [Best Practices](docs/BEST_PRACTICES.md)
-- [Antigravity Guide](docs/ANTIGRAVITY_GUIDE.md)
-- [Cursor Guide](docs/CURSOR_GUIDE.md)
-
+Usage: load `system/base.rules.md` plus `system/backend.rules.md` or `system/frontend.rules.md` (and `system/java.rules.md` for Java projects), then run a task or follow the manual workflow.
