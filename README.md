@@ -22,10 +22,15 @@ Enterprise-grade, modüler ve genişletilebilir AI workflow agent sistemi. Antig
 ├── rules/                  # Modular rule library
 │   ├── core/              # SOLID, Clean Code, OOP, Patterns
 │   ├── backend/           # Java 21, DDD, Spring Boot
+│   ├── frontend/          # Vue 3, Pinia, TypeScript, Security
 │   ├── security/          # OWASP, PII protection
 │   └── testing/           # Unit & Integration testing
 ├── templates/             # Project templates
-│   └── java-ddd/          # Java 21 DDD template
+│   ├── java-ddd/          # Java 21 DDD template
+│   │   └── .agent/        # Agent config
+│   │       ├── rules/     # Project rules
+│   │       └── workflows/ # Workflow agents
+│   └── vue-spa/           # Vue 3 SPA template
 │       └── .agent/        # Agent config
 │           ├── rules/     # Project rules
 │           └── workflows/ # Workflow agents
@@ -51,12 +56,3 @@ Enterprise-grade, modüler ve genişletilebilir AI workflow agent sistemi. Antig
 - [Antigravity Guide](docs/ANTIGRAVITY_GUIDE.md)
 - [Cursor Guide](docs/CURSOR_GUIDE.md)
 
-## 🔗 Similar Projects
-
-- [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)
-- [instructa/ai-prompts](https://github.com/instructa/ai-prompts)
-- [study8677/antigravity-workspace-template](https://github.com/study8677/antigravity-workspace-template)
-
-## 📄 License
-
-MIT

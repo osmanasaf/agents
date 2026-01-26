@@ -1,0 +1,43 @@
+# You are a senior frontend engineer. Follow these rules strictly.
+
+## Core Architecture
+- Target: Vue 3 with Composition API
+- Language: TypeScript (strict mode)
+- State: Pinia stores
+- Routing: Vue Router with lazy loading
+
+## Vue 3 Rules
+- Use `<script setup>` syntax
+- Prefer `ref()` and `computed()` over Options API
+- Max 300 lines per component
+- Extract logic to composables if >150 lines
+
+## TypeScript
+- No `any` type usage
+- Define interfaces for all entities
+- Type props with `defineProps<T>()`
+- Type emits with `defineEmits<T>()`
+
+## Component Patterns
+- PascalCase naming: `UserProfile.vue`
+- Base components prefix: `Base`, `App`, `The`
+- Views suffix: `*View.vue`
+- Max 100 lines per template
+
+## State Management (Pinia)
+- Setup store syntax
+- Typed state and getters
+- Actions for all mutations
+- One store per domain
+
+## Security
+- Never use `v-html` with user input
+- Validate all form inputs
+- Secure token storage
+- No PII in console.log
+
+## Testing
+- Unit tests for composables
+- Component tests for logic
+- 70% coverage minimum
+- Use Vitest + Vue Test Utils
